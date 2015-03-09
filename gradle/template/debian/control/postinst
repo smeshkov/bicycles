@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+APP_LIB=/usr/lib/sm/@serviceName@/jars
+APP_RUN=/var/run/sm/@serviceName@
+APP_LOG=/var/log/sm/@serviceName@
+
+adduser --system --group --quiet sm
+
+mkdir -p ${APP_LIB}
+mkdir -p ${APP_RUN}
+mkdir -p ${APP_LOG}
+
+chown sm:sm -R ${APP_RUN}
+chown sm:sm -R ${APP_LOG}
+
+chmod +x /etc/init.d/@serviceName@

@@ -1,0 +1,12 @@
+/etc
+/etc/sm
+/etc/sm/@serviceName@
+/var/
+/var/log/
+/var/log/@serviceName@
+/var/run/
+/var/run/@serviceName@
+/usr
+/usr/lib
+/usr/lib/@serviceName@
+/usr/lib/@serviceName@/jars

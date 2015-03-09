@@ -1,0 +1,10 @@
+Package: @packageName@
+Maintainer: @maintainer@
+Version: @version@
+Section: contrib/java
+Priority: extra
+Architecture: amd64
+Depends: @dependencies@
+Description: App @serviceName@
+  @packageDescription@
+  @version@

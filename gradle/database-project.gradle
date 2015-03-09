@@ -1,0 +1,39 @@
+project.apply plugin: 'liquibase'
+
+project.apply from: "${rootProject.projectDir}/gradle/includes/libraries.gradle"
+
+project.dependencies {
+
+    compile libGroups.spring_orm
+    compile libGroups.hibernate
+    compile libGroups.sql_db
+
+    /**
+     * is needed for java 8
+     */
+    compile libraries.javassist
+
+    /**
+     * required for hibernate
+     */
+    compile libGroups.aspect
+}
+
+buildscript {
+    repositories.addAll project.repositories
+
+    dependencies {
+        classpath libraries.h2
+    }
+}
+
+/**
+ * execute ./gradlew enableDaemon if you starts the server but it's not working
+ */
+task h2start << {
+    org.h2.tools.Server.main("-tcpPort", "9092", "-tcpAllowOthers");
+}
+
+task h2stop << {
+    org.h2.tools.Server.shutdownTcpServer("tcp://localhost:9092", "", true, false);
+}
