@@ -1,7 +1,7 @@
 package com.smeshkov.bicycles.server;
 
 import com.smeshkov.bicycles.server.exception.ServerStartException;
-import com.smeshkov.bicycles.util.util.ConcurrencyUtil;
+import com.smeshkov.bicycles.util.ConcurrencyUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;

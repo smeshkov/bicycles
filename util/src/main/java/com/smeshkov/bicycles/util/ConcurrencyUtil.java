@@ -1,4 +1,4 @@
-package com.smeshkov.bicycles.util.util;
+package com.smeshkov.bicycles.util;
 
 import lombok.extern.slf4j.Slf4j;
 

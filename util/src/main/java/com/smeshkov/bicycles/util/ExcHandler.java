@@ -1,4 +1,4 @@
-package com.smeshkov.bicycles.util.util;
+package com.smeshkov.bicycles.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

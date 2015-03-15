@@ -1,0 +1,8 @@
+description = 'Algorithm'
+
+project.group = 'com.smeshkov.bicycles'
+
+project.apply from: utilityGradleScript
+
+dependencies {
+}

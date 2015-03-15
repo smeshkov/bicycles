@@ -2,6 +2,6 @@ rootProject.name = 'bicycles'
 
 include 'util'
 include 'sorting'
+include 'algorithm'
 include 'server'
-
 
