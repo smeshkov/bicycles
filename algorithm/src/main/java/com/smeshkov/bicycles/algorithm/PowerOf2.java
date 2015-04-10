@@ -4,10 +4,10 @@ package com.smeshkov.bicycles.algorithm;
  * @author smeshkov
  * @since 15/03/15
  */
-public class PoerOf2Test {
+public class PowerOf2 {
 
     public static void main(String[] args) {
-        System.out.println(isPowerOfTwo(8));
+        System.out.println(isPowerOfTwo(7));
     }
 
     /*
